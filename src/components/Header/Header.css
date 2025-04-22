@@ -1,0 +1,128 @@
+/* Main container — full screen height and top-aligned */
+.header-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    gap: 6rem;
+  }
+}
+
+/* Left side content */
+.header-left {
+  flex: 1;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .header-left {
+    text-align: left;
+    padding-top: 0;
+  }
+}
+
+/* Title and styling */
+.header-title {
+  display: flex;
+  align-items: center;
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: #001f3f;
+  font-family: 'Georgia', serif;
+}
+
+.header-title span:first-child {
+  font-size: 5rem;
+  color: #001f3f;
+  text-decoration: underline;
+  margin-right: 0.3rem;
+}
+
+.header-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  color: #1e293b;
+  font-family: 'Georgia', serif;
+}
+
+.header-description {
+  font-size: 1.3rem;
+  color: #333;
+  max-width: 500px;
+  margin: 1.2rem auto;
+  line-height: 1.6;
+  font-family: 'Georgia', serif;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .header-buttons {
+    justify-content: flex-start;
+  }
+}
+
+.btn {
+  padding: 0.9rem 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 31, 63, 0.1);
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: #001f3f; /* Dark navy blue */
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #04070b; /* Slightly lighter navy blue for hover */
+}
+
+/* Right side image */
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1rem;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Float animation for the image */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}

@@ -1,0 +1,83 @@
+.signInContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background: #f2f5fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.signInFormContainer {
+  background: #ffffff;
+  padding: 3rem 4rem;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 450px;
+  min-width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signInForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.signInTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: #333;
+}
+
+.signInSubtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.signInInput {
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border 0.3s ease;
+}
+
+.signInInput:focus {
+  border-color: #9b59b6; /* subtle purple hint */
+  outline: none;
+  background: #fff;
+}
+
+.signInButton {
+  margin-top: 1.5rem;
+  padding: 1rem 1rem;
+  background-color: #9b59b6; /* light purple accent */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signInButton:hover {
+  background-color: #8e44ad;
+  transform: translateY(-1px);
+}
+
+.signInButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

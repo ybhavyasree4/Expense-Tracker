@@ -1,0 +1,35 @@
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImage {
+    width: 100px; 
+    height: 50px; 
+    margin-right: 10px;
+  }
+  
+  .appName {
+    font-size: 24px;
+    color: #ff0000;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .logoWithName {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logoImage {
+      width: 60px; 
+      height: 60px; 
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .appName {
+      font-size: 20px;
+    }
+  }
+  

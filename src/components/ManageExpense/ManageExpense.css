@@ -1,0 +1,201 @@
+.expense-container {
+  color: rgb(9, 9, 9);
+}
+
+.expense-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.expense-heading span {
+  color: black;
+}
+
+/* Initial View Layout */
+.landing-box {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-section {
+  flex: 1;
+}
+
+.expense-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.button-section {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.button-section button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: #7a5df0;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 160px;
+  transition: background 0.3s;
+}
+
+.button-section button:hover {
+  background-color: #5f47c7;
+}
+
+/* Datewise View */
+.filter-box {
+  background-color: white;
+  color: black;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.filter-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.date-inputs input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.date-inputs button {
+  background-color: #7a5df0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.filter-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #8e3ef2;
+  color: white;
+}
+
+.back-button {
+  margin-top: 1.5rem;
+  background-color: #8e3ef2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .landing-box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .button-section {
+    width: 100%;
+  }
+
+  .expense-image {
+    max-width: 100%;
+  }
+}
+
+/* Ensure the cards are displayed in the same line */
+.category-card-container {
+  display: flex;
+  justify-content: space-around; /* Space between cards */
+  gap: 2rem; /* Space between cards */
+  margin-top: 2rem;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  background-color: #e5cdfd;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 260px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.category-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,13 @@
+.expense-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.expense-logo-image {
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+}

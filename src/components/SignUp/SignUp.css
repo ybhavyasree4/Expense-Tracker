@@ -1,0 +1,80 @@
+.signupFormContainer {
+    background-color: #f3e6fa; /* Added this line */
+    padding: 3rem 4rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Increased width */
+  }
+  
+  .signupFormContainer {
+    background-color: #fff;
+    padding: 3rem 4rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px;
+  }
+  
+  .signupTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .signupInput {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #eef3ff;
+    outline: none;
+    transition: 0.3s ease;
+  }
+  
+  .signupInput:focus {
+    border-color: #8000a3;
+    background-color: #e6e6ff;
+  }
+  
+  .submitButton {
+    margin-top: 1rem;
+    background-color: #8000a3;
+    color: white;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #660080;
+  }
+  
+  .signinText {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .signinText a {
+    color: #8000a3;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .signinText a:hover {
+    text-decoration: underline;
+  }
+  
